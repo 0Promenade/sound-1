@@ -1,0 +1,2680 @@
+{
+    "_id": "6a014dd2a985d9af20a4149e",
+    "ops": [
+        {
+            "id": "x42l80lgg",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Audio Input index",
+                    "value": 0
+                },
+                {
+                    "name": "Audio Input",
+                    "value": "Default"
+                },
+                {
+                    "name": "Volume",
+                    "value": 1
+                },
+                {
+                    "name": "Mute",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Audio Out",
+                    "links": [
+                        {
+                            "portIn": "Audio In",
+                            "portOut": "Audio Out",
+                            "objIn": "tfe62m3rg",
+                            "objOut": "x42l80lgg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Listening",
+                    "value": 1
+                }
+            ],
+            "objName": "Ops.WebAudio.MicrophoneIn_v2"
+        },
+        {
+            "id": "tfe62m3rg",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "FFT size index",
+                    "value": 4
+                },
+                {
+                    "name": "FFT size",
+                    "value": "512"
+                },
+                {
+                    "name": "Smoothing",
+                    "value": 0.7
+                },
+                {
+                    "name": "Min",
+                    "value": -90
+                },
+                {
+                    "name": "Max",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Trigger Out",
+                    "links": [
+                        {
+                            "portIn": "Refresh",
+                            "portOut": "Trigger Out",
+                            "objIn": "wo9r3gd6q",
+                            "objOut": "tfe62m3rg"
+                        }
+                    ]
+                },
+                {
+                    "name": "FFT Array",
+                    "links": [
+                        {
+                            "portIn": "FFT Array",
+                            "portOut": "FFT Array",
+                            "objIn": "wo9r3gd6q",
+                            "objOut": "tfe62m3rg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Array Length",
+                    "value": 256
+                },
+                {
+                    "name": "Average Volume",
+                    "value": 0.0260009765625
+                },
+                {
+                    "name": "Average Volume Time-Domain",
+                    "value": 0.4979248046875
+                },
+                {
+                    "name": "RMS Volume",
+                    "value": 0.4979402315743084
+                }
+            ],
+            "objName": "Ops.WebAudio.AudioAnalyzer_v2"
+        },
+        {
+            "id": "q15riq79z",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "r",
+                    "value": 0.91363525390625
+                },
+                {
+                    "name": "g",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 0.9693944931030274
+                },
+                {
+                    "name": "a",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger",
+                            "objIn": "gobzg5o72",
+                            "objOut": "q15riq79z"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.ClearColor"
+        },
+        {
+            "id": "gobzg5o72",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "r",
+                    "value": 1
+                },
+                {
+                    "name": "g",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 1
+                },
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "colorizeTexture",
+                    "value": 0
+                },
+                {
+                    "name": "Vertex Colors",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha Mask Source index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha Mask Source",
+                    "value": "Luminance"
+                },
+                {
+                    "name": "Opacity TexCoords Transform",
+                    "value": 0
+                },
+                {
+                    "name": "Discard Transparent Pixels",
+                    "value": 0
+                },
+                {
+                    "name": "diffuseRepeatX",
+                    "value": 1
+                },
+                {
+                    "name": "diffuseRepeatY",
+                    "value": 1
+                },
+                {
+                    "name": "Tex Offset X",
+                    "value": 0
+                },
+                {
+                    "name": "Tex Offset Y",
+                    "value": 0
+                },
+                {
+                    "name": "Crop TexCoords",
+                    "value": 0
+                },
+                {
+                    "name": "billboard",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger",
+                            "objIn": "4ms50fxjk",
+                            "objOut": "gobzg5o72"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.Shader.BasicMaterial_v3"
+        },
+        {
+            "id": "wcmrm3ips",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Max Pixel Density (DPR)",
+                    "value": 2
+                },
+                {
+                    "name": "FPS Limit",
+                    "value": 0
+                },
+                {
+                    "name": "Reduce FPS unfocussed",
+                    "value": 0
+                },
+                {
+                    "name": "Transparent",
+                    "value": 0
+                },
+                {
+                    "name": "Active",
+                    "value": 1
+                },
+                {
+                    "name": "Focus canvas",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "exe",
+                            "portOut": "trigger",
+                            "objIn": "pg3m9bax0",
+                            "objOut": "wcmrm3ips"
+                        }
+                    ]
+                },
+                {
+                    "name": "width",
+                    "value": 795
+                },
+                {
+                    "name": "height",
+                    "value": 448
+                },
+                {
+                    "name": "Pixel Density",
+                    "value": 1
+                }
+            ],
+            "objName": "Ops.Gl.MainLoop_v2"
+        },
+        {
+            "id": "nw72snfjw",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "min distance",
+                    "value": 1
+                },
+                {
+                    "name": "max distance",
+                    "value": 100000
+                },
+                {
+                    "name": "min rot y",
+                    "value": 0
+                },
+                {
+                    "name": "max rot y",
+                    "value": 0
+                },
+                {
+                    "name": "initial radius",
+                    "value": 20
+                },
+                {
+                    "name": "initial axis y",
+                    "value": 0.5
+                },
+                {
+                    "name": "initial axis x",
+                    "value": 0.25
+                },
+                {
+                    "name": "Smoothness",
+                    "value": 1
+                },
+                {
+                    "name": "Speed X",
+                    "value": 1
+                },
+                {
+                    "name": "Speed Y",
+                    "value": 1
+                },
+                {
+                    "name": "Active",
+                    "value": 1
+                },
+                {
+                    "name": "Allow Panning",
+                    "value": 1
+                },
+                {
+                    "name": "Allow Zooming",
+                    "value": 1
+                },
+                {
+                    "name": "Allow Rotation",
+                    "value": 1
+                },
+                {
+                    "name": "restricted",
+                    "value": 1
+                },
+                {
+                    "name": "Identity",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "exe",
+                            "portOut": "trigger",
+                            "objIn": "6aqwy23ji",
+                            "objOut": "nw72snfjw"
+                        }
+                    ]
+                },
+                {
+                    "name": "radius",
+                    "value": 20
+                },
+                {
+                    "name": "Rot X",
+                    "value": 90
+                },
+                {
+                    "name": "Rot Y",
+                    "value": 90
+                }
+            ],
+            "objName": "Ops.Graphics.OrbitControls_v3"
+        },
+        {
+            "id": "ffh36h824",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Array",
+                    "title": "Positions"
+                },
+                {
+                    "name": "Scramble Texcoords",
+                    "value": 0
+                },
+                {
+                    "name": "Seed",
+                    "value": 9.45
+                },
+                {
+                    "name": "Coordinates",
+                    "value": 0,
+                    "title": "Texture Coordinates"
+                },
+                {
+                    "name": "Vertex Colors",
+                    "value": 0
+                }
+            ],
+            "objName": "Ops.Gl.Meshes.PointCloudFromArray_v2"
+        },
+        {
+            "id": "hecx8lhow",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Speed",
+                    "value": 1
+                },
+                {
+                    "name": "Play",
+                    "value": 1
+                },
+                {
+                    "name": "Sync to timeline",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Time",
+                    "links": [
+                        {
+                            "portIn": "time",
+                            "portOut": "Time",
+                            "objIn": "l3ye7sbvc",
+                            "objOut": "hecx8lhow"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Anim.Timer_v2"
+        },
+        {
+            "id": "6aqwy23ji",
+            "attribs": {},
+            "portsOut": [
+                {
+                    "name": "trigger 0",
+                    "links": [
+                        {
+                            "portIn": "Trigger In",
+                            "portOut": "trigger 0",
+                            "objIn": "tfe62m3rg",
+                            "objOut": "6aqwy23ji"
+                        }
+                    ]
+                },
+                {
+                    "name": "trigger 1",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger 1",
+                            "objIn": "q15riq79z",
+                            "objOut": "6aqwy23ji"
+                        }
+                    ]
+                },
+                {
+                    "name": "trigger 2",
+                    "links": [
+                        {
+                            "portIn": "Render",
+                            "portOut": "trigger 2",
+                            "objIn": "p2m7mipgx",
+                            "objOut": "6aqwy23ji"
+                        }
+                    ]
+                },
+                {
+                    "name": "trigger 3",
+                    "links": [
+                        {
+                            "portIn": "Update",
+                            "portOut": "trigger 3",
+                            "objIn": "7byb8act0",
+                            "objOut": "6aqwy23ji"
+                        }
+                    ]
+                },
+                {
+                    "name": "trigger 5",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger 5",
+                            "objIn": "f9f3ubk49",
+                            "objOut": "6aqwy23ji"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Trigger.Sequence"
+        },
+        {
+            "id": "wo9r3gd6q",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "X Position",
+                    "value": 0
+                },
+                {
+                    "name": "Y Position",
+                    "value": 0
+                },
+                {
+                    "name": "Width",
+                    "value": 0.2
+                },
+                {
+                    "name": "Height",
+                    "value": 0.2
+                },
+                {
+                    "name": "Create Texture",
+                    "value": 1
+                },
+                {
+                    "name": "Texture Size index",
+                    "value": 0
+                },
+                {
+                    "name": "Texture Size",
+                    "value": "128"
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Area Average Volume",
+                    "links": [
+                        {
+                            "portIn": "number1",
+                            "portOut": "Area Average Volume",
+                            "objIn": "cvhs5jyj5",
+                            "objOut": "wo9r3gd6q"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.WebAudio.FFTAreaAverage_v3"
+        },
+        {
+            "id": "cvhs5jyj5",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "number2",
+                    "value": 20
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "result",
+                    "links": [
+                        {
+                            "portIn": "Value",
+                            "portOut": "result",
+                            "objIn": "7byb8act0",
+                            "objOut": "cvhs5jyj5"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Math.Multiply"
+        },
+        {
+            "id": "l3ye7sbvc",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "num",
+                    "value": 1000
+                },
+                {
+                    "name": "Size X",
+                    "value": 2
+                },
+                {
+                    "name": "Size Y",
+                    "value": 1
+                },
+                {
+                    "name": "Size Z",
+                    "value": 0
+                },
+                {
+                    "name": "movement x",
+                    "value": 0
+                },
+                {
+                    "name": "movement y",
+                    "value": 0.87
+                },
+                {
+                    "name": "movement z",
+                    "value": -2.9
+                },
+                {
+                    "name": "Center X",
+                    "value": 1
+                },
+                {
+                    "name": "Center Y",
+                    "value": 0
+                },
+                {
+                    "name": "Center Z",
+                    "value": 0
+                },
+                {
+                    "name": "Burst X (Audio)",
+                    "value": 0
+                },
+                {
+                    "name": "Burst Z (Audio)",
+                    "value": 0
+                },
+                {
+                    "name": "Gravity",
+                    "value": 9
+                },
+                {
+                    "name": "Turbulence Amount",
+                    "value": 0.9
+                },
+                {
+                    "name": "Turbulence Speed",
+                    "value": 0.2
+                },
+                {
+                    "name": "lifetime",
+                    "value": 8
+                },
+                {
+                    "name": "Lifetime Minimum",
+                    "value": 5
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Trigger Out",
+                    "links": [
+                        {
+                            "portIn": "Transform",
+                            "portOut": "Trigger Out",
+                            "objIn": "k5j0oisb4",
+                            "objOut": "l3ye7sbvc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Positions",
+                    "links": [
+                        {
+                            "portIn": "Array",
+                            "portOut": "Positions",
+                            "objIn": "k5j0oisb4",
+                            "objOut": "l3ye7sbvc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Lifetime",
+                    "links": [
+                        {
+                            "portIn": "Point sizes",
+                            "portOut": "Lifetime",
+                            "objIn": "ffh36h824",
+                            "objOut": "l3ye7sbvc"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Local.Ops.Local.SprayMod"
+        },
+        {
+            "id": "4ms50fxjk",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "PointSize",
+                    "value": 300
+                },
+                {
+                    "name": "Size in Pixels",
+                    "value": 0
+                },
+                {
+                    "name": "Random Size",
+                    "value": 3
+                },
+                {
+                    "name": "Round",
+                    "value": 1
+                },
+                {
+                    "name": "Round Antialias",
+                    "value": 0
+                },
+                {
+                    "name": "Scale by Distance",
+                    "value": 1
+                },
+                {
+                    "name": "r",
+                    "value": 0.9866666666666667
+                },
+                {
+                    "name": "g",
+                    "value": 0.9866666666666667
+                },
+                {
+                    "name": "b",
+                    "value": 0.9866666666666667
+                },
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "Vertex Colors",
+                    "value": 0
+                },
+                {
+                    "name": "Colorize Texture",
+                    "value": 0
+                },
+                {
+                    "name": "Mask Channel index",
+                    "value": 0
+                },
+                {
+                    "name": "Mask Channel",
+                    "value": "R"
+                },
+                {
+                    "name": "Colorize Randomize",
+                    "value": 0
+                },
+                {
+                    "name": "Point Size Channel index",
+                    "value": 0
+                },
+                {
+                    "name": "Point Size Channel",
+                    "value": "R"
+                },
+                {
+                    "name": "Texture Point Size Mul",
+                    "value": 1
+                },
+                {
+                    "name": "Map Size 0 index",
+                    "value": 0
+                },
+                {
+                    "name": "Map Size 0",
+                    "value": "Black"
+                },
+                {
+                    "name": "Flip Texture",
+                    "value": 0
+                },
+                {
+                    "name": "Atlas Cross Fade",
+                    "value": 0
+                },
+                {
+                    "name": "Atlas Repeat X ",
+                    "value": 1
+                },
+                {
+                    "name": "Min Point Size",
+                    "value": 20
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "exe",
+                            "portOut": "trigger",
+                            "objIn": "l3ye7sbvc",
+                            "objOut": "4ms50fxjk"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.Shader.PointMaterial_v6"
+        },
+        {
+            "id": "it88drnvj",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "File",
+                    "value": "file:///home/promenade/Im%C3%A1genes/1d_wasyY.jpg",
+                    "display": "file"
+                },
+                {
+                    "name": "Filter index",
+                    "value": 1
+                },
+                {
+                    "name": "Filter",
+                    "value": "linear"
+                },
+                {
+                    "name": "Wrap index",
+                    "value": 0
+                },
+                {
+                    "name": "Wrap",
+                    "value": "repeat"
+                },
+                {
+                    "name": "Anisotropic index",
+                    "value": 0
+                },
+                {
+                    "name": "Anisotropic",
+                    "value": 0
+                },
+                {
+                    "name": "Data Format index",
+                    "value": 3
+                },
+                {
+                    "name": "Data Format",
+                    "value": "RGBA"
+                },
+                {
+                    "name": "Flip",
+                    "value": 0
+                },
+                {
+                    "name": "Pre Multiplied Alpha",
+                    "value": 0
+                },
+                {
+                    "name": "Active",
+                    "value": 1
+                },
+                {
+                    "name": "Save Memory",
+                    "value": 1
+                },
+                {
+                    "name": "Add Cachebuster",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Texture",
+                    "links": [
+                        {
+                            "portIn": "Texture Opacity",
+                            "portOut": "Texture",
+                            "objIn": "4ms50fxjk",
+                            "objOut": "it88drnvj"
+                        }
+                    ]
+                },
+                {
+                    "name": "Width",
+                    "value": 736
+                },
+                {
+                    "name": "Height",
+                    "value": 981
+                },
+                {
+                    "name": "Aspect Ratio",
+                    "value": 0.7502548419979612
+                },
+                {
+                    "name": "Loaded",
+                    "value": 1
+                },
+                {
+                    "name": "Loading",
+                    "value": 0
+                }
+            ],
+            "objName": "Ops.Gl.Texture_v2"
+        },
+        {
+            "id": "k5j0oisb4",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Translate X",
+                    "value": 0
+                },
+                {
+                    "name": "Translate Y",
+                    "value": -6.17
+                },
+                {
+                    "name": "Translate Z",
+                    "value": 0
+                },
+                {
+                    "name": "Scale X",
+                    "value": 3
+                },
+                {
+                    "name": "Scale Y",
+                    "value": 1
+                },
+                {
+                    "name": "Scale Z",
+                    "value": 2
+                },
+                {
+                    "name": "Rotation X",
+                    "value": 0
+                },
+                {
+                    "name": "Rotation Y",
+                    "value": 0
+                },
+                {
+                    "name": "Rotation Z",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Next",
+                    "links": [
+                        {
+                            "portIn": "exe",
+                            "portOut": "Next",
+                            "objIn": "ffh36h824",
+                            "objOut": "k5j0oisb4"
+                        }
+                    ]
+                },
+                {
+                    "name": "Result",
+                    "links": [
+                        {
+                            "portIn": "Array",
+                            "portOut": "Result",
+                            "objIn": "ffh36h824",
+                            "objOut": "k5j0oisb4"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Array.PointArray.TransformArray3"
+        },
+        {
+            "id": "1pc87mtsu",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Title",
+                    "value": "Emitter"
+                }
+            ],
+            "objName": "Ops.Ui.Area"
+        },
+        {
+            "id": "ou3y0uf9r",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Title",
+                    "value": "Origin"
+                }
+            ],
+            "objName": "Ops.Ui.Area"
+        },
+        {
+            "id": "hqj8wxx86",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Title",
+                    "value": "Audio"
+                }
+            ],
+            "objName": "Ops.Ui.Area"
+        },
+        {
+            "id": "6w653lk13",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "render",
+                    "title": "Trigger"
+                },
+                {
+                    "name": "Render Mesh",
+                    "value": 1,
+                    "title": "Render"
+                },
+                {
+                    "name": "width",
+                    "value": 10
+                },
+                {
+                    "name": "height",
+                    "value": 6
+                },
+                {
+                    "name": "pivot x index",
+                    "value": 1
+                },
+                {
+                    "name": "pivot x",
+                    "value": "center"
+                },
+                {
+                    "name": "pivot y index",
+                    "value": 1
+                },
+                {
+                    "name": "pivot y",
+                    "value": "center"
+                },
+                {
+                    "name": "axis index",
+                    "value": 0
+                },
+                {
+                    "name": "axis",
+                    "value": "xy"
+                },
+                {
+                    "name": "Flip TexCoord X",
+                    "value": 0
+                },
+                {
+                    "name": "Flip TexCoord Y",
+                    "value": 1
+                },
+                {
+                    "name": "num columns",
+                    "value": 1000
+                },
+                {
+                    "name": "num rows",
+                    "value": 100
+                }
+            ],
+            "objName": "Ops.Graphics.Meshes.Rectangle_v4"
+        },
+        {
+            "id": "f9f3ubk49",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "posX",
+                    "value": 0
+                },
+                {
+                    "name": "posY",
+                    "value": -3.42
+                },
+                {
+                    "name": "posZ",
+                    "value": -11.35
+                },
+                {
+                    "name": "scale",
+                    "value": 26.58
+                },
+                {
+                    "name": "rotX",
+                    "value": 90
+                },
+                {
+                    "name": "rotY",
+                    "value": 0
+                },
+                {
+                    "name": "rotZ",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "Trigger In",
+                            "portOut": "trigger",
+                            "objIn": "dhvrtlg50",
+                            "objOut": "f9f3ubk49"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Graphics.Transform"
+        },
+        {
+            "id": "wl77k1rpj",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "R",
+                    "value": 0.12906762440999348
+                },
+                {
+                    "name": "G",
+                    "value": 0.5342708333333333
+                },
+                {
+                    "name": "B",
+                    "value": 0.22859566260178882
+                },
+                {
+                    "name": "A",
+                    "value": 1
+                },
+                {
+                    "name": "Roughness",
+                    "value": 0.03
+                },
+                {
+                    "name": "Metalness",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha Mode index",
+                    "value": 3
+                },
+                {
+                    "name": "Alpha Mode",
+                    "value": "Blend"
+                },
+                {
+                    "name": "Use Clear Coat",
+                    "value": 0
+                },
+                {
+                    "name": "Clear Coat Intensity",
+                    "value": 1
+                },
+                {
+                    "name": "Clear Coat Roughness",
+                    "value": 0.5
+                },
+                {
+                    "name": "Use Normal map for Clear Coat",
+                    "value": 0
+                },
+                {
+                    "name": "Use Thin Film",
+                    "value": 1
+                },
+                {
+                    "name": "Thin Film Intensity",
+                    "value": 1
+                },
+                {
+                    "name": "Thin Film IOR",
+                    "value": 0.59
+                },
+                {
+                    "name": "Thin Film Thickness (nm)",
+                    "value": 600
+                },
+                {
+                    "name": "Thickness Tex Min",
+                    "value": 300
+                },
+                {
+                    "name": "Thickness Tex Max",
+                    "value": 600
+                },
+                {
+                    "name": "Tonemapping index",
+                    "value": 2
+                },
+                {
+                    "name": "Tonemapping",
+                    "value": "HejiDawson"
+                },
+                {
+                    "name": "Exposure",
+                    "value": 1
+                },
+                {
+                    "name": "Emission Intensity",
+                    "value": 20
+                },
+                {
+                    "name": "Disable geometric roughness",
+                    "value": 0
+                },
+                {
+                    "name": "Use roughness from normal map",
+                    "value": 0
+                },
+                {
+                    "name": "Use Vertex Colours",
+                    "value": 0
+                },
+                {
+                    "name": "Vertex Colour Mode index",
+                    "value": 0
+                },
+                {
+                    "name": "Vertex Colour Mode",
+                    "value": "colour"
+                },
+                {
+                    "name": "Height Intensity",
+                    "value": 1
+                },
+                {
+                    "name": "Faster heightmapping",
+                    "value": 0
+                },
+                {
+                    "name": "Double Sided",
+                    "value": 0
+                },
+                {
+                    "name": "Num mip levels",
+                    "value": 0
+                },
+                {
+                    "name": "Diffuse Intensity",
+                    "value": 1
+                },
+                {
+                    "name": "Specular Intensity",
+                    "value": 1
+                },
+                {
+                    "name": "Lightmap is RGBE",
+                    "value": 0
+                },
+                {
+                    "name": "Lightmap Intensity",
+                    "value": 1
+                },
+                {
+                    "name": "Texture RepeatX",
+                    "value": 1
+                },
+                {
+                    "name": "Texture RepeatY",
+                    "value": 1
+                },
+                {
+                    "name": "Texture Offset X",
+                    "value": 0
+                },
+                {
+                    "name": "Texture Offset Y",
+                    "value": 0
+                },
+                {
+                    "name": "Multiply Texture Color",
+                    "value": 0
+                },
+                {
+                    "name": "Flip Textures",
+                    "value": 0
+                },
+                {
+                    "name": "Gamma encoded",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Next",
+                    "links": [
+                        {
+                            "portIn": "Render",
+                            "portOut": "Next",
+                            "objIn": "i5rdwhz17",
+                            "objOut": "wl77k1rpj"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.Pbr.PbrMaterial"
+        },
+        {
+            "id": "dhvrtlg50",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Cast Light",
+                    "value": 1
+                },
+                {
+                    "name": "Radius",
+                    "value": 9
+                },
+                {
+                    "name": "X",
+                    "value": 0
+                },
+                {
+                    "name": "Y",
+                    "value": 10
+                },
+                {
+                    "name": "Z",
+                    "value": 5
+                },
+                {
+                    "name": "R",
+                    "value": 0.8932617187499999
+                },
+                {
+                    "name": "G",
+                    "value": 0.96
+                },
+                {
+                    "name": "B",
+                    "value": 0.9543601452464788
+                },
+                {
+                    "name": "Specular R",
+                    "value": 1
+                },
+                {
+                    "name": "Specular G",
+                    "value": 0.82891845703125
+                },
+                {
+                    "name": "Specular B",
+                    "value": 0.9727261308310687
+                },
+                {
+                    "name": "Falloff",
+                    "value": 0.587
+                },
+                {
+                    "name": "Cast Shadow",
+                    "value": 1
+                },
+                {
+                    "name": "Rendering Active",
+                    "value": 1
+                },
+                {
+                    "name": "Map Size index",
+                    "value": 1
+                },
+                {
+                    "name": "Map Size",
+                    "value": 512
+                },
+                {
+                    "name": "Shadow Strength",
+                    "value": 1
+                },
+                {
+                    "name": "Near",
+                    "value": 0.1
+                },
+                {
+                    "name": "Far",
+                    "value": 30
+                },
+                {
+                    "name": "Bias",
+                    "value": 0.004
+                },
+                {
+                    "name": "Polygon Offset",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Trigger Out",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "Trigger Out",
+                            "objIn": "wl77k1rpj",
+                            "objOut": "dhvrtlg50"
+                        }
+                    ]
+                },
+                {
+                    "name": "World Position X",
+                    "value": 0
+                },
+                {
+                    "name": "World Position Y",
+                    "value": -136.3199920654297
+                },
+                {
+                    "name": "World Position Z",
+                    "value": 254.4499969482422
+                }
+            ],
+            "objName": "Ops.Gl.Phong.PointLight_v5"
+        },
+        {
+            "id": "36dstwasn",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Gradient",
+                    "value": "{\"keys\":[{\"pos\":0,\"posy\":0.23,\"r\":0.37438653310139974,\"g\":0.592463300821367,\"b\":0.8167708333333333,\"a\":1},{\"pos\":0.08331298828125,\"posy\":0.23,\"r\":0.37438653310139974,\"g\":0.592463300821367,\"b\":0.8167708333333333,\"a\":1},{\"pos\":0.40557861328125,\"posy\":0.67,\"r\":0.5239438247680663,\"g\":0.8428556959390637,\"b\":0.8634375,\"a\":1},{\"pos\":0.97589111328125,\"posy\":0.46,\"r\":1,\"g\":1,\"b\":1,\"a\":1},{\"pos\":1,\"posy\":0.46,\"r\":1,\"g\":1,\"b\":1,\"a\":1}]}"
+                },
+                {
+                    "name": "Direction index",
+                    "value": 6
+                },
+                {
+                    "name": "Direction",
+                    "value": "Radial"
+                },
+                {
+                    "name": "Interpolation index",
+                    "value": 1
+                },
+                {
+                    "name": "Interpolation",
+                    "value": "Linear"
+                },
+                {
+                    "name": "Flip",
+                    "value": 1
+                },
+                {
+                    "name": "sRGB",
+                    "value": 1
+                },
+                {
+                    "name": "Oklab",
+                    "value": 0
+                },
+                {
+                    "name": "Size",
+                    "value": 300
+                },
+                {
+                    "name": "filter index",
+                    "value": 0
+                },
+                {
+                    "name": "filter",
+                    "value": "nearest"
+                },
+                {
+                    "name": "wrap index",
+                    "value": 0
+                },
+                {
+                    "name": "wrap",
+                    "value": "clamp to edge"
+                },
+                {
+                    "name": "Dither",
+                    "value": 0.3
+                },
+                {
+                    "name": "Gradient Array",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha",
+                    "value": "Mask"
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Texture",
+                    "links": [
+                        {
+                            "portIn": "Albedo",
+                            "portOut": "Texture",
+                            "objIn": "wl77k1rpj",
+                            "objOut": "36dstwasn"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.GradientTexture_v2"
+        },
+        {
+            "id": "pg3m9bax0",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Active",
+                    "value": 1
+                },
+                {
+                    "name": "Visible",
+                    "value": 1
+                },
+                {
+                    "name": "Measure GPU",
+                    "value": 1
+                },
+                {
+                    "name": "Position index",
+                    "value": 0
+                },
+                {
+                    "name": "Position",
+                    "value": "top"
+                },
+                {
+                    "name": "Open",
+                    "value": 0
+                },
+                {
+                    "name": "Smooth Graph",
+                    "value": 1
+                },
+                {
+                    "name": "Scale",
+                    "value": 3
+                },
+                {
+                    "name": "Size",
+                    "value": 128
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "childs",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "childs",
+                            "objIn": "nw72snfjw",
+                            "objOut": "pg3m9bax0"
+                        }
+                    ]
+                },
+                {
+                    "name": "FPS",
+                    "value": 61
+                }
+            ],
+            "objName": "Ops.Gl.Performance"
+        },
+        {
+            "id": "9nqj9rznm",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Speed",
+                    "value": 2
+                },
+                {
+                    "name": "Play",
+                    "value": 1
+                },
+                {
+                    "name": "Sync to timeline",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Time",
+                    "links": [
+                        {
+                            "portIn": "number1",
+                            "portOut": "Time",
+                            "objIn": "a03w8wcr3",
+                            "objOut": "9nqj9rznm"
+                        },
+                        {
+                            "portIn": "number1",
+                            "portOut": "Time",
+                            "objIn": "b81p80yp2",
+                            "objOut": "9nqj9rznm"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Anim.Timer_v2"
+        },
+        {
+            "id": "khzr4z34b",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Blend Mode index",
+                    "value": 0
+                },
+                {
+                    "name": "Blend Mode",
+                    "value": "normal"
+                },
+                {
+                    "name": "Amount",
+                    "value": 1
+                },
+                {
+                    "name": "Alpha Mask index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha Mask",
+                    "value": "Off"
+                },
+                {
+                    "name": "Mask Invert",
+                    "value": 0
+                },
+                {
+                    "name": "r",
+                    "value": 1
+                },
+                {
+                    "name": "g",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 1
+                },
+                {
+                    "name": "A",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger",
+                            "objIn": "a6luam0i4",
+                            "objOut": "khzr4z34b"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.ImageCompose.Color_v2"
+        },
+        {
+            "id": "p2m7mipgx",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Size index",
+                    "value": 0
+                },
+                {
+                    "name": "Size",
+                    "value": "Auto"
+                },
+                {
+                    "name": "Width",
+                    "value": 512
+                },
+                {
+                    "name": "Height",
+                    "value": 512
+                },
+                {
+                    "name": "Filter index",
+                    "value": 1
+                },
+                {
+                    "name": "Filter",
+                    "value": "linear"
+                },
+                {
+                    "name": "Wrap index",
+                    "value": 0
+                },
+                {
+                    "name": "Wrap",
+                    "value": "clamp to edge"
+                },
+                {
+                    "name": "Anisotropic index",
+                    "value": 0
+                },
+                {
+                    "name": "Anisotropic",
+                    "value": "0"
+                },
+                {
+                    "name": "Pixel Format index",
+                    "value": 4
+                },
+                {
+                    "name": "Pixel Format",
+                    "value": "RGBA 8bit ubyte"
+                },
+                {
+                    "name": "Clear",
+                    "value": 1
+                },
+                {
+                    "name": "R",
+                    "value": 0
+                },
+                {
+                    "name": "G",
+                    "value": 0
+                },
+                {
+                    "name": "B",
+                    "value": 0
+                },
+                {
+                    "name": "A",
+                    "value": 0
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Next",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "Next",
+                            "objIn": "khzr4z34b",
+                            "objOut": "p2m7mipgx"
+                        }
+                    ]
+                },
+                {
+                    "name": "texture_out",
+                    "links": [
+                        {
+                            "portIn": "Texture",
+                            "portOut": "texture_out",
+                            "objIn": "i5rdwhz17",
+                            "objOut": "p2m7mipgx"
+                        }
+                    ]
+                },
+                {
+                    "name": "Aspect Ratio",
+                    "value": 1.7745535714285714
+                },
+                {
+                    "name": "Texture Width",
+                    "value": 795
+                },
+                {
+                    "name": "Texture Height",
+                    "value": 448
+                }
+            ],
+            "objName": "Ops.Gl.ImageCompose.ImageCompose_v4"
+        },
+        {
+            "id": "i5rdwhz17",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Extrude",
+                    "value": 0.36
+                },
+                {
+                    "name": "Mode index",
+                    "value": 0
+                },
+                {
+                    "name": "Mode",
+                    "value": "Norm"
+                },
+                {
+                    "name": "Axis index",
+                    "value": 0
+                },
+                {
+                    "name": "Axis",
+                    "value": "XYZ"
+                },
+                {
+                    "name": "Coordinates index",
+                    "value": 0
+                },
+                {
+                    "name": "Coordinates",
+                    "value": "Tex Coords"
+                },
+                {
+                    "name": "Channel index",
+                    "value": 0
+                },
+                {
+                    "name": "Channel",
+                    "value": "Luminance"
+                },
+                {
+                    "name": "Flip index",
+                    "value": 1
+                },
+                {
+                    "name": "Flip",
+                    "value": "X"
+                },
+                {
+                    "name": "Range index",
+                    "value": 0
+                },
+                {
+                    "name": "Range",
+                    "value": "0-1"
+                },
+                {
+                    "name": "Offset X",
+                    "value": 0
+                },
+                {
+                    "name": "Offset Y",
+                    "value": 0
+                },
+                {
+                    "name": "Scale",
+                    "value": 1
+                },
+                {
+                    "name": "Calc Normals",
+                    "value": 1
+                },
+                {
+                    "name": "Normal Axis index",
+                    "value": 0
+                },
+                {
+                    "name": "Normal Axis",
+                    "value": "X"
+                },
+                {
+                    "name": "Discard Zero Values",
+                    "value": 0
+                },
+                {
+                    "name": "colorize",
+                    "value": 0
+                },
+                {
+                    "name": "Colorize Min",
+                    "value": 0
+                },
+                {
+                    "name": "Colorize Max",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger",
+                            "objIn": "6w653lk13",
+                            "objOut": "i5rdwhz17"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.ShaderEffects.VertexDisplacementMap_v5"
+        },
+        {
+            "id": "a6luam0i4",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Blend Mode index",
+                    "value": 0
+                },
+                {
+                    "name": "Blend Mode",
+                    "value": "normal"
+                },
+                {
+                    "name": "Alpha Mask index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha Mask",
+                    "value": "Off"
+                },
+                {
+                    "name": "r",
+                    "value": 1
+                },
+                {
+                    "name": "g",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 1
+                },
+                {
+                    "name": "scale",
+                    "value": 2
+                },
+                {
+                    "name": "anim",
+                    "value": 0
+                },
+                {
+                    "name": "scrollX",
+                    "value": 9
+                },
+                {
+                    "name": "repeat",
+                    "value": 3
+                },
+                {
+                    "name": "aspect",
+                    "value": 1
+                },
+                {
+                    "name": "Layer 1",
+                    "value": 1
+                },
+                {
+                    "name": "Layer 2",
+                    "value": 1
+                },
+                {
+                    "name": "Layer 3",
+                    "value": 1
+                },
+                {
+                    "name": "Layer 4",
+                    "value": 1
+                },
+                {
+                    "name": "Tileable",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "trigger",
+                    "links": [
+                        {
+                            "portIn": "render",
+                            "portOut": "trigger",
+                            "objIn": "hysm97n3f",
+                            "objOut": "a6luam0i4"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.ImageCompose.Noise.FBMNoise_v2"
+        },
+        {
+            "id": "a03w8wcr3",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "number2",
+                    "value": 30
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "result",
+                    "links": [
+                        {
+                            "portIn": "scrollY",
+                            "portOut": "result",
+                            "objIn": "a6luam0i4",
+                            "objOut": "a03w8wcr3"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Math.Divide"
+        },
+        {
+            "id": "7byb8act0",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Separate inc/dec",
+                    "value": 0
+                },
+                {
+                    "name": "Inc factor",
+                    "value": 3,
+                    "title": "Inc/Dec factor"
+                },
+                {
+                    "name": "Dec factor",
+                    "value": 4
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Result",
+                    "links": [
+                        {
+                            "portIn": "Burst Y (Audio)",
+                            "portOut": "Result",
+                            "objIn": "l3ye7sbvc",
+                            "objOut": "7byb8act0"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Anim.Smooth"
+        },
+        {
+            "id": "hysm97n3f",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Blend Mode index",
+                    "value": 0
+                },
+                {
+                    "name": "Blend Mode",
+                    "value": "normal"
+                },
+                {
+                    "name": "Alpha Mask index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha Mask",
+                    "value": "Off"
+                },
+                {
+                    "name": "Color index",
+                    "value": 0
+                },
+                {
+                    "name": "Color",
+                    "value": "Mono"
+                },
+                {
+                    "name": "Scale",
+                    "value": 8
+                },
+                {
+                    "name": "Multiply",
+                    "value": 1
+                },
+                {
+                    "name": "Value index",
+                    "value": 0
+                },
+                {
+                    "name": "Value",
+                    "value": "0-1"
+                },
+                {
+                    "name": "Harmonics index",
+                    "value": 1
+                },
+                {
+                    "name": "Harmonics",
+                    "value": "2"
+                },
+                {
+                    "name": "Offset Multiply",
+                    "value": 1
+                },
+                {
+                    "name": "Offset X index",
+                    "value": 3
+                },
+                {
+                    "name": "Offset X",
+                    "value": "B"
+                },
+                {
+                    "name": "Offset Y index",
+                    "value": 0
+                },
+                {
+                    "name": "Offset Y",
+                    "value": "None"
+                },
+                {
+                    "name": "Offset Z index",
+                    "value": 1
+                },
+                {
+                    "name": "Offset Z",
+                    "value": "R"
+                }
+            ],
+            "objName": "Ops.Gl.ImageCompose.Noise.PerlinNoise_v2"
+        },
+        {
+            "id": "b81p80yp2",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "number2",
+                    "value": 0.1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "result",
+                    "links": [
+                        {
+                            "portIn": "Y",
+                            "portOut": "result",
+                            "objIn": "hysm97n3f",
+                            "objOut": "b81p80yp2"
+                        },
+                        {
+                            "portIn": "Z",
+                            "portOut": "result",
+                            "objIn": "hysm97n3f",
+                            "objOut": "b81p80yp2"
+                        },
+                        {
+                            "portIn": "X",
+                            "portOut": "result",
+                            "objIn": "hysm97n3f",
+                            "objOut": "b81p80yp2"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Math.Multiply"
+        },
+        {
+            "id": "q8t3mu5ju",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Text",
+                    "value": "Perlin"
+                },
+                {
+                    "name": "Min",
+                    "value": 0
+                },
+                {
+                    "name": "Max",
+                    "value": 1
+                },
+                {
+                    "name": "Step",
+                    "value": 0.001
+                },
+                {
+                    "name": "Suffix",
+                    "value": ""
+                },
+                {
+                    "name": "Grey Out",
+                    "value": 0
+                },
+                {
+                    "name": "Visible",
+                    "value": 1
+                },
+                {
+                    "name": "Input",
+                    "value": 0.5
+                },
+                {
+                    "name": "Default",
+                    "value": 0.5
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "childs",
+                    "links": [
+                        {
+                            "portIn": "link",
+                            "portOut": "childs",
+                            "objIn": "sh9zei2t5",
+                            "objOut": "q8t3mu5ju"
+                        }
+                    ]
+                },
+                {
+                    "name": "Result",
+                    "links": [
+                        {
+                            "portIn": "Amount",
+                            "portOut": "Result",
+                            "objIn": "hysm97n3f",
+                            "objOut": "q8t3mu5ju"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Sidebar.Slider_v3"
+        },
+        {
+            "id": "lfhozwv6f",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Visible",
+                    "value": 1
+                },
+                {
+                    "name": "Opacity",
+                    "value": 1
+                },
+                {
+                    "name": "Default Minimized",
+                    "value": 0
+                },
+                {
+                    "name": "Minimized Opacity",
+                    "value": 0.363
+                },
+                {
+                    "name": "Show undo button",
+                    "value": 0
+                },
+                {
+                    "name": "Show Minimize",
+                    "value": 1
+                },
+                {
+                    "name": "Title",
+                    "value": ""
+                },
+                {
+                    "name": "Side",
+                    "value": 1
+                },
+                {
+                    "name": "Default CSS",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "childs",
+                    "title": "Children",
+                    "links": [
+                        {
+                            "portIn": "link",
+                            "portOut": "childs",
+                            "objIn": "q8t3mu5ju",
+                            "objOut": "lfhozwv6f"
+                        }
+                    ]
+                },
+                {
+                    "name": "Opfened",
+                    "value": false,
+                    "title": "Opened"
+                }
+            ],
+            "objName": "Ops.Sidebar.Sidebar"
+        },
+        {
+            "id": "sh9zei2t5",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Text",
+                    "value": "FBM"
+                },
+                {
+                    "name": "Min",
+                    "value": 0
+                },
+                {
+                    "name": "Max",
+                    "value": 1
+                },
+                {
+                    "name": "Step",
+                    "value": 0.001
+                },
+                {
+                    "name": "Suffix",
+                    "value": ""
+                },
+                {
+                    "name": "Grey Out",
+                    "value": 0
+                },
+                {
+                    "name": "Visible",
+                    "value": 1
+                },
+                {
+                    "name": "Input",
+                    "value": 0.5
+                },
+                {
+                    "name": "Default",
+                    "value": 0.5
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "childs",
+                    "links": [
+                        {
+                            "portIn": "link",
+                            "portOut": "childs",
+                            "objIn": "pmns4hcez",
+                            "objOut": "sh9zei2t5"
+                        }
+                    ]
+                },
+                {
+                    "name": "Result",
+                    "links": [
+                        {
+                            "portIn": "Amount",
+                            "portOut": "Result",
+                            "objIn": "a6luam0i4",
+                            "objOut": "sh9zei2t5"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Sidebar.Slider_v3"
+        },
+        {
+            "id": "u5m3wgf57",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Gradient",
+                    "value": "{\"keys\":[{\"pos\":0,\"posy\":0.5,\"r\":0.6730291112263997,\"g\":0.9216300502973113,\"b\":0.9501041666666666,\"a\":1},{\"pos\":0,\"posy\":0.5,\"r\":0.6730291112263997,\"g\":0.9216300502973113,\"b\":0.9501041666666666,\"a\":1},{\"pos\":0.16339111328125,\"posy\":0.39,\"r\":0.9767708333333334,\"g\":0.9767708333333334,\"b\":0.9767708333333334,\"a\":1},{\"pos\":0.35870361328125,\"posy\":0.41,\"r\":0.7604318618774414,\"g\":0.8760249888976415,\"b\":0.9167708333333333,\"a\":1},{\"pos\":0.62823486328125,\"posy\":0.37,\"r\":0.6332174091954383,\"g\":0.5602365493774414,\"b\":0.8834375,\"a\":1},{\"pos\":1,\"posy\":0.5,\"r\":0.1476820246378581,\"g\":0.15223345792319862,\"b\":0.3767708333333334,\"a\":1},{\"pos\":1,\"posy\":0.5,\"r\":0.1476820246378581,\"g\":0.15223345792319862,\"b\":0.3767708333333334,\"a\":1}]}"
+                },
+                {
+                    "name": "Direction index",
+                    "value": 6
+                },
+                {
+                    "name": "Direction",
+                    "value": "Radial"
+                },
+                {
+                    "name": "Interpolation index",
+                    "value": 1
+                },
+                {
+                    "name": "Interpolation",
+                    "value": "Linear"
+                },
+                {
+                    "name": "Flip",
+                    "value": 0
+                },
+                {
+                    "name": "sRGB",
+                    "value": 1
+                },
+                {
+                    "name": "Oklab",
+                    "value": 1
+                },
+                {
+                    "name": "Size",
+                    "value": 256
+                },
+                {
+                    "name": "filter index",
+                    "value": 0
+                },
+                {
+                    "name": "filter",
+                    "value": "nearest"
+                },
+                {
+                    "name": "wrap index",
+                    "value": 1
+                },
+                {
+                    "name": "wrap",
+                    "value": "repeat"
+                },
+                {
+                    "name": "Dither",
+                    "value": 0.2
+                },
+                {
+                    "name": "Gradient Array",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha",
+                    "value": "Mask"
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Texture",
+                    "links": [
+                        {
+                            "portIn": "texture",
+                            "portOut": "Texture",
+                            "objIn": "4ms50fxjk",
+                            "objOut": "u5m3wgf57"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Gl.GradientTexture_v2"
+        },
+        {
+            "id": "6xgafisl1",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Gradient",
+                    "value": "{\"keys\":[{\"pos\":0,\"posy\":0.23,\"r\":0.37438653310139974,\"g\":0.592463300821367,\"b\":0.8167708333333333,\"a\":1},{\"pos\":0.08331298828125,\"posy\":0.23,\"r\":0.37438653310139974,\"g\":0.592463300821367,\"b\":0.8167708333333333,\"a\":1},{\"pos\":0.40557861328125,\"posy\":0.67,\"r\":0.5239438247680663,\"g\":0.8428556959390637,\"b\":0.8634375,\"a\":1},{\"pos\":0.97589111328125,\"posy\":0.46,\"r\":1,\"g\":1,\"b\":1,\"a\":1},{\"pos\":1,\"posy\":0.46,\"r\":1,\"g\":1,\"b\":1,\"a\":1}]}"
+                },
+                {
+                    "name": "Direction index",
+                    "value": 6
+                },
+                {
+                    "name": "Direction",
+                    "value": "Radial"
+                },
+                {
+                    "name": "Interpolation index",
+                    "value": 1
+                },
+                {
+                    "name": "Interpolation",
+                    "value": "Linear"
+                },
+                {
+                    "name": "Flip",
+                    "value": 1
+                },
+                {
+                    "name": "sRGB",
+                    "value": 1
+                },
+                {
+                    "name": "Oklab",
+                    "value": 0
+                },
+                {
+                    "name": "Size",
+                    "value": 300
+                },
+                {
+                    "name": "filter index",
+                    "value": 0
+                },
+                {
+                    "name": "filter",
+                    "value": "nearest"
+                },
+                {
+                    "name": "wrap index",
+                    "value": 0
+                },
+                {
+                    "name": "wrap",
+                    "value": "clamp to edge"
+                },
+                {
+                    "name": "Dither",
+                    "value": 0.3
+                },
+                {
+                    "name": "Gradient Array",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha index",
+                    "value": 0
+                },
+                {
+                    "name": "Alpha",
+                    "value": "Mask"
+                }
+            ],
+            "objName": "Ops.Gl.GradientTexture_v2"
+        },
+        {
+            "id": "pmns4hcez",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Text",
+                    "value": "Light"
+                },
+                {
+                    "name": "Min",
+                    "value": 0
+                },
+                {
+                    "name": "Max",
+                    "value": 500
+                },
+                {
+                    "name": "Step",
+                    "value": 1
+                },
+                {
+                    "name": "Suffix",
+                    "value": ""
+                },
+                {
+                    "name": "Grey Out",
+                    "value": 0
+                },
+                {
+                    "name": "Visible",
+                    "value": 1
+                },
+                {
+                    "name": "Input",
+                    "value": 133
+                },
+                {
+                    "name": "Default",
+                    "value": 0.5
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "childs",
+                    "links": [
+                        {
+                            "portIn": "link",
+                            "portOut": "childs",
+                            "objIn": "yogkc6zzc",
+                            "objOut": "pmns4hcez"
+                        }
+                    ]
+                },
+                {
+                    "name": "Result",
+                    "links": [
+                        {
+                            "portIn": "Intensity",
+                            "portOut": "Result",
+                            "objIn": "dhvrtlg50",
+                            "objOut": "pmns4hcez"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Sidebar.Slider_v3"
+        },
+        {
+            "id": "yogkc6zzc",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Text",
+                    "value": "Particles"
+                },
+                {
+                    "name": "Min",
+                    "value": 0
+                },
+                {
+                    "name": "Max",
+                    "value": 1000
+                },
+                {
+                    "name": "Step",
+                    "value": 1
+                },
+                {
+                    "name": "Suffix",
+                    "value": ""
+                },
+                {
+                    "name": "Grey Out",
+                    "value": 0
+                },
+                {
+                    "name": "Visible",
+                    "value": 1
+                },
+                {
+                    "name": "Input",
+                    "value": 329
+                },
+                {
+                    "name": "Default",
+                    "value": 0.5
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "childs",
+                    "links": [
+                        {
+                            "portIn": "link",
+                            "portOut": "childs",
+                            "objIn": "pxn3wu4jn",
+                            "objOut": "yogkc6zzc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Result",
+                    "links": [
+                        {
+                            "portIn": "Num Points",
+                            "portOut": "Result",
+                            "objIn": "ffh36h824",
+                            "objOut": "yogkc6zzc"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Sidebar.Slider_v3"
+        },
+        {
+            "id": "pxn3wu4jn",
+            "attribs": {},
+            "portsIn": [
+                {
+                    "name": "Text",
+                    "value": "Start"
+                },
+                {
+                    "name": "Grey Out",
+                    "value": 0
+                },
+                {
+                    "name": "Visible",
+                    "value": 1
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Pressed Trigger",
+                    "links": [
+                        {
+                            "portIn": "Start",
+                            "portOut": "Pressed Trigger",
+                            "objIn": "x42l80lgg",
+                            "objOut": "pxn3wu4jn"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Sidebar.Button_v2"
+        }
+    ],
+    "export": {
+        "time": "2026-05-27 23:50",
+        "service": "html",
+        "exportNumber": 3
+    }
+}
